@@ -3,9 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <title>Моя страница</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .button-link {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .button-link:hover {
+      background-color: #0056b3;
+    }
+
+    .qr-code {
+      margin-bottom: 20px;
+    }
+
+    .text-link {
+      display: block;
+      font-size: 14px;
+      color: #007bff;
+      word-break: break-all;
+      text-decoration: none;
+    }
+
+    .text-link:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <p>Это мой текст.</p>
-  <a href="https://link.bank.com.ua/bankid/fff9d306-118a-4786-93f7-8cee292c3a8c">Перейти по ссылке</a>
+
+  <a class="button-link" href="https://link.bank.com.ua/bankid/fff9d306-118a-4786-93f7-8cee292c3a8c">
+    Перейти по ссылке
+  </a>
+
+  <div class="qr-code">
+    <img
+      src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://link.bank.com.ua/bankid/fff9d306-118a-4786-93f7-8cee292c3a8c"
+      alt="QR код"
+    >
+  </div>
+
+  <a class="text-link" href="https://link.bank.com.ua/bankid/fff9d306-118a-4786-93f7-8cee292c3a8c">
+    https://link.bank.com.ua/bankid/fff9d306-118a-4786-93f7-8cee292c3a8c
+  </a>
 </body>
 </html>
